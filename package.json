@@ -1,6 +1,19 @@
 {
+  "name": "module-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besparza90/module-10"
+  },
   "dependencies": {
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
     "jest": "^27.4.7"
   }
 }
