@@ -1,6 +1,6 @@
-// Export function to generate HTML page
-module.exports = templateData => {
-    const {interns, engineers, ...manager } = templateData;
+// Export function to generate html page
+module.exports = teamInfo => {
+    const {interns, engineers, ...manager } = teamInfo;
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -30,8 +30,8 @@ ${createIntern(interns)}
  `;
 };
 
-// Create Team Profile
 
+//Manager profile is made.
 const createManager = Manager => {
     return `
     <div class="card m-2 col-3">
@@ -50,11 +50,10 @@ const createManager = Manager => {
     </div>
     `
 }
-
+//Map method is used to make array to fill out engineer info. Join method is used to add this info.
 const createEngineer = engineersArr => {
     return `
-    ${engineersArr
-        .map(({ name, id, email, github, role }) => {
+    ${engineersArr.map(({ name, id, email, github, role }) => {
             return `
             <div class="card m-2 col-3">
             <div class="card-header text-center">

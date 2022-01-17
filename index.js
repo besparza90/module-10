@@ -1,6 +1,5 @@
 const fs = require('fs');
 const inquirer = require('inquirer')
-//const writeFile = require('./dist/index.html')
 const generatePage = require('./src/page-template');
 
 const Engineer = require('./lib/Engineer')
@@ -114,7 +113,7 @@ const promptEmployee = managerData => {
             }
         })
 } 
-
+//Writes input to html.
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
       fs.writeFile('./dist/index.html', fileContent, err => {
