@@ -1,4 +1,4 @@
-# module-10
+# team-profile-generator
 
 This application takes input from a user to create a team profile. Inquirer is used to take these inputs. After info for the manager is made, the user can add info for an engineer, and intern, or end the app. This will generate an html file for their generated team.
 
